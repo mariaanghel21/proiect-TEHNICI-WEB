@@ -1,0 +1,101 @@
+/* CSS pentru printare - Identificator: css-printare */
+
+/* 1. Bannerul din footer (paragraful) - afișat în dreapta-sus pe prima pagină */
+footer p {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 50%;
+    border: 3px double black;
+    padding: 10px;
+    background: white;
+    z-index: 1000;
+    font-weight: bold;
+  }
+  
+  /* 2. Ascunde elemente media și linkul "Înapoi sus" */
+  img, video, iframe, .map-container, .back-to-top,
+  .picture, .video-layout, .taburi-iframe {
+    display: none !important;
+  }
+  
+  /* 3. Gridul afișat ca block */
+  .grid-container, .grid-layout {
+    display: block !important;
+  }
+  
+  /* 4. Linkuri afișate ca text normal */
+  a {
+    color: black !important;
+    text-decoration: none !important;
+  }
+  
+  /* 5. Heading H1 centrat + meniu ca listă */
+  header h1 {
+    text-align: center;
+    color: black !important; /* Ignoră culoarea inline */
+    page-break-after: avoid;
+  }
+  
+  /* Meniul sub formă de listă ierarhică */
+  .main-nav ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  .main-nav > ul > li {
+    display: block;
+    margin-bottom: 10px;
+  }
+  .main-nav ul ul {
+    padding-left: 20px;
+  }
+  .main-nav ul ul ul {
+    padding-left: 40px;
+  }
+  
+  /* 6. Page break după meniu și înainte de footer */
+  .main-nav {
+    page-break-after: always;
+  }
+  footer {
+    page-break-before: always;
+  }
+  
+  /* 7. Watermark cu numele tău (Maria Anghel) */
+  @page {
+    margin: 2cm;
+  }
+
+  body::before {
+    content: "Maria Anghel";
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.3);
+    white-space: pre;
+    text-align: center;
+    z-index: -1;
+  }
+  
+  /* 8. Margini diferite pentru paginile pare/impare */
+  @page :left {
+    margin-left: 2cm;
+    margin-right: 1cm;
+  }
+  @page :right {
+    margin-right: 2cm;
+    margin-left: 1cm;
+  }
+  
+  /* Corecții suplimentare */
+  header {
+    position: static !important;
+  }
+  #menu-toggle, .menu-icon {
+    display: none !important;
+  }
+  details summary {
+    list-style: none; /* Ascunde săgeata din <details> */
+  }

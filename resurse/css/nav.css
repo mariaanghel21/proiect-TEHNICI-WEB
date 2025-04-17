@@ -1,0 +1,221 @@
+nav {
+    background-color: var(--primary-color); 
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+nav ul {
+    list-style: none; 
+    margin: 0 auto; 
+    padding: 0;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 20px; 
+}
+
+nav ul li a {
+    text-decoration: none; 
+    color: var(--text-color); 
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease; 
+}
+
+nav ul li a:hover {
+    background-color: var(--secondary-color); 
+    color: white; 
+}
+
+nav ul li ul {
+    display: none; 
+    position: absolute; 
+    background-color: var(--primary-color);
+    padding: 10px;
+    list-style: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    margin-top: 10px; 
+    z-index: 1000; 
+}
+
+nav ul li:hover > ul {
+    display: block; 
+}
+
+nav ul li ul li a {
+    padding: 8px 12px;
+    display: block; 
+    color: var(--text-color);
+    white-space: nowrap; 
+}
+
+nav ul li ul li a:hover {
+    background-color: var(--accent-color);
+    color: white;
+}
+
+nav ul li ul li ul {
+    display: none; 
+    position: absolute;
+    left: 100%; 
+    top: 0;
+    background-color: var(--primary-color);
+    padding: 10px;
+    list-style: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+nav ul li ul li:hover > ul {
+    display: block; 
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        "zona1 zona1 zona1 zona1"
+        "zona2 zona3 zona3 zona4"
+        "zona5 zona6 zona7 zona7"
+        "zona8 zona8 zona8 zona8";
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: auto auto auto auto; 
+    gap: 20px; 
+    padding: 20px;
+}
+
+#zona1 {
+    grid-area: zona1;
+    background-color: #E643A4;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+#zona2 {
+    grid-area: zona2;
+    background-color: #FFC0CB;
+    color: white;
+    padding: 20px;
+}
+
+#zona3 {
+    grid-area: zona3;
+    background-color: #D443E6;
+    color: white;
+    padding: 100px;
+}
+
+#zona4 {
+    grid-area: zona4;
+    background-color:#E56666;
+    color: white;
+    padding: 100px;
+}
+
+#zona5 {
+    grid-area: zona5;
+    background-color: #E56666; 
+    color: white;
+    padding: 20px;
+}
+
+#zona6 {
+    grid-area: zona6;
+    background-color: #DE9EE6;
+    color: white;
+    padding: 20px;
+}
+
+#zona7 {
+    grid-area: zona7;
+    background-color: #FFC0CB;
+    color: black;
+    padding: 20px;
+}
+
+#zona8 {
+    grid-area: zona8;
+    background-color: #E643A4;
+    color: white;
+    padding: 20px;
+}
+
+@media (max-width: 1024px) {
+    .grid-container {
+        grid-template-areas:
+            "zona1 zona1"
+            "zona2 zona3"
+            "zona4 zona4"
+            "zona5 zona6"
+            "zona7 zona7"
+            "zona8 zona8";
+        grid-template-columns: 1fr 1fr; 
+    }
+}
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-areas:
+            "zona1"
+            "zona2"
+            "zona3"
+            "zona4"
+            "zona5"
+            "zona6"
+            "zona7"
+            "zona8";
+        grid-template-columns: 1fr; 
+    }
+}
+
+html {
+    font-size: 16px; 
+    transition: font-size 0.3s ease; 
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6; 
+    color: #DE9EE6; 
+}
+
+h1 {
+    font-size: 2rem; 
+}
+
+h2 {
+    font-size: 1.5rem; 
+}
+
+h3 {
+    font-size: 1.25rem; 
+}
+
+p, li {
+    font-size: 1rem; 
+}
+
+@media (max-width: 1024px) {
+    html {
+        font-size: 15px; 
+    }
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 14px; 
+    }
+}
+
+nav ul li a i {
+    display: none; 
+}
+
+@media (max-width: 768px) {
+    nav ul li a i {
+        display: inline-block; 
+        margin-right: 5px; 
+        font-size: 1.2rem; 
+        color: var(--primary-color); 
+    }
+}

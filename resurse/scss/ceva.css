@@ -1,0 +1,190 @@
+body {
+  --primary-color: #9E43E6;
+  --secondary-color: #E643A4;
+  --accent-color: #D443E6;
+  --background-color: #6943E6;
+  --border-color: #E56666;
+  --text-color: #DE9EE6;
+}
+
+nav {
+  background-color: #9E43E6;
+  padding: 20px;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+nav ul li {
+  position: relative;
+}
+nav ul li a {
+  display: block;
+  padding: 10px 20px;
+  color: #DE9EE6;
+  text-decoration: none;
+  font-weight: bold;
+  position: relative;
+  overflow: hidden;
+  transition: color 0.3s ease;
+}
+nav ul li a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 2px solid #E56666;
+  box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.5);
+  transform: scaleY(0);
+  transform-origin: center;
+  transition: transform 0.3s ease-in-out;
+  z-index: -1;
+}
+nav ul li a:hover, nav ul li a:focus {
+  color: #D443E6;
+}
+nav ul li a:hover::before, nav ul li a:focus::before {
+  transform: scaleY(1);
+}
+nav ul li a:not(:hover)::before {
+  transform: scaleY(0);
+}
+nav ul li ul {
+  list-style: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #E643A4;
+  padding: 10px 0;
+  border-radius: 5px;
+  transform: scale(0);
+  transform-origin: top left;
+  transition: transform 0.3s ease-in-out;
+  z-index: 10;
+}
+nav ul li ul li a {
+  display: block;
+  padding: 10px 20px;
+  color: #DE9EE6;
+  text-decoration: none;
+  font-weight: bold;
+  position: relative;
+  overflow: hidden;
+}
+nav ul li ul li a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 4px;
+  background: linear-gradient(to right, #D443E6 50%, #e99df2 50%);
+  background-size: 200% 100%;
+  background-position: left;
+  transition: width 0.3s ease-in-out;
+  border-top: 2px solid #D443E6;
+  border-bottom: 2px solid #e99df2;
+}
+nav ul li ul li a:hover::after {
+  width: 100%;
+}
+nav ul li:hover > ul, nav ul li:focus-within > ul {
+  transform: scale(1);
+}
+
+nav ul li:nth-child(1) {
+  z-index: 1;
+}
+
+nav ul li:nth-child(2) {
+  z-index: 2;
+}
+
+nav ul li:nth-child(3) {
+  z-index: 3;
+}
+
+nav ul li:nth-child(4) {
+  z-index: 4;
+}
+
+nav ul li:nth-child(5) {
+  z-index: 5;
+}
+
+nav ul li:nth-child(6) {
+  z-index: 6;
+}
+
+nav ul li:nth-child(7) {
+  z-index: 7;
+}
+
+nav ul li:nth-child(8) {
+  z-index: 8;
+}
+
+nav ul li:nth-child(9) {
+  z-index: 9;
+}
+
+nav ul li:nth-child(10) {
+  z-index: 10;
+}
+
+button {
+  background-color: #E643A4;
+  color: #DE9EE6;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+  border: 2px solid #E56666;
+  font-weight: bold;
+}
+button:hover {
+  background-color: #D443E6;
+  color: white;
+}
+
+.table-container {
+  overflow-x: auto;
+  margin: 20px 0;
+}
+.table-container table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 2px solid #9E43E6;
+}
+.table-container table thead th {
+  background-color: #9E43E6;
+  color: #DE9EE6;
+  padding: 10px;
+}
+.table-container table tbody td {
+  padding: 10px;
+  border: 1px solid #E643A4;
+}
+.table-container table tbody td:nth-child(odd) {
+  color: #9E43E6;
+}
+.table-container table tbody td:nth-child(even) {
+  color: #E643A4;
+}
+.table-container table tfoot td {
+  background-color: #D443E6;
+  color: #DE9EE6;
+  font-weight: bold;
+  padding: 10px;
+}
+.table-container table tbody tr:hover {
+  background-color: #E643A4;
+  color: white;
+  transition: all 0.3s ease-in-out;
+}/*# sourceMappingURL=ceva.css.map */
