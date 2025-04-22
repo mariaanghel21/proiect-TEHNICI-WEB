@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ro">
+    <%- include('../fragmente/head') %>
+    <body id="top">
+        <%- include('../fragmente/header') %>
+        
+            
+            <section id="zona1">
+                <h2>Home Page</h2>
+                <section id="banner">
+                    <h2>Bine ai venit la Lunaria Beauty Shop!</h2>
+                    <img src="resurse/imagini/bannerfatafrumoasa.png" alt="Banner Frumusete" style="width: 100%; height: auto;">
+                </section>
+                <picture>
+                    <source srcset="resurse/imagini/poza-makeup-mare.jpg" media="(max-width: 1200px)">
+                    <source srcset="resurse/imagini/poza-makeup-medie.jpg" media="(max-width: 800px)">
+                    <source srcset="resurse/imagini/poza-makeup-mica.jpg" media="(max-width: 300px)">
+                    <img src="resurse/imagini/poza-makeup-mare.jpg" alt="Makeup Image">
+                </picture>
+                <section id="zona8">
+                    <h2>Videoclipuri tutoriale folositoare</h2>
+                    <div class="video-layout">
+                      <!-- Containerele pentru iframe -->
+                      <div class="video-container">
+                        <iframe name="ifr-video" src="https://www.youtube.com/embed/oQkQv1ULyzs" frameborder="0" allowfullscreen class="iframe-container"></iframe>
+                      </div>
+                      
+                      <!-- Taburi pentru videoclipuri -->
+                      <div class="taburi-iframe">
+                        <a href="https://www.youtube.com/embed/oQkQv1ULyzs" target="ifr-video" class="tab">Videoclip 1</a>
+                        <a href="https://www.youtube.com/embed/y46hvE9JAXo" target="ifr-video" class="tab">Videoclip 2</a>
+                        <a href="https://www.youtube.com/embed/UcDzJ8FXMYY" target="ifr-video" class="tab">Videoclip 3</a>
+                      </div>
+                    </div>
+                  </section>
+                <section id="subsectiune1">
+                    <h3>Despre noi</h3>
+                    <p>Descopera un univers dedicat ingrijirii <b>pielii</b>, machiajului si ritualurilor de frumusete care te vor face sa stralucesti. Fie ca iti doresti un look natural sau unul indraznet, avem produsele si sfaturile perfecte pentru tine.</p>
+                    <p>Produse premium! Formule inovatoare pentru o ingrijire delicata si eficienta.</p>
+                    <p>Machiaj profesionist! Culori vibrante si texturi luxoase pentru un look impecabil.</p>
+                    <p>Sfaturi personalizate! Ghiduri si recomandari pentru fiecare tip de ten.</p>
+                    <p>La <b>Lunaria Beauty Shop</b>, gasesti tot ce ai nevoie pentru un look perfect: <b>make-up</b>, produse pentru <b>par</b>, <b>ten</b> si <b>corp</b>, <b>mascara</b>, <b>fond de ten</b>, <b>seruri</b>, produse pentru <b>buze</b> si <b>sprancene</b>, <b>ulei de par</b> si <b>creme de corp</b>. Indiferent de nevoile tale, avem solutiile ideale pentru a-ti pune in valoare frumusetea naturala.</p>
+                    <p><q>Frumusetea incepe in momentul in care decizi sa fii tu insuti.</q> - Coco Chanel</p>
+                    <p>Viziteaza site-ul nostru partener pentru mai multe informatii: <a href="https://www.example.com" target="_blank">Example.com</a></p>
+                </section>
+            
+                <section id="sectiune4">
+                    <h3>Intrebari frecvente</h3>
+                    <details>
+                        <summary>Ce produse oferiti?</summary>
+                        <p>Oferim o gama variata de produse pentru ingrijirea pielii, machiaj, par si corp.</p>
+                    </details>
+                    <details>
+                        <summary>Care este politica de returnare?</summary>
+                        <p>Produsele pot fi returnate in termen de 30 de zile de la achizitie, cu conditia sa fie in ambalajul original, sigilat si neutilizat.</p>
+                    </details>
+                    <details>
+                        <summary>Cum pot contacta serviciul de relatii cu clientii?</summary>
+                        <p>Ne poti contacta la telefon +40 000 000 000 sau prin email la contact@lunariabeautyshop.ro.</p>
+                    </details>
+                </section>
+            </section>
+            
+            <main class="grid-container">
+                <section id="zona-layout" class="grid-layout">
+                    <div id="stanga">
+                        <section id="zona2">
+                            <h2>Top Produse Vandute</h2>
+                            <div class="table-container">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Produs</th>
+                                            <th>Categorie</th>
+                                            <th>Pret</th>
+                                            <th>Reducere</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Fond de ten</td>
+                                            <td>Make-up</td>
+                                            <td>99 RON</td>
+                                            <td>10%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Ruj mat</td>
+                                            <td>Make-up</td>
+                                            <td>49 RON</td>
+                                            <td>10%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Gel de dus</td>
+                                            <td>Baie & Corp</td>
+                                            <td>25 RON</td>
+                                            <td>5%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Set cadou</td>
+                                            <td>Cadouri</td>
+                                            <td>150 RON</td>
+                                            <td>15%</td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <td colspan="4">Toate preturile includ TVA</td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+                        </section>
+                    </div>
+                    <div id="dreapta">
+                        <section id="zona4">
+                            <h2>Anunturi</h2>
+                            <p>Reduceri de primavara! Profita acum de pana la 50% reducere la produsele selectate.</p>
+                        </section>
+                    </div>
+                    <div id="dreapta">   
+                        <section id="zona3">
+                            <h2>Calendar de evenimente</h2>
+                            <p>Urmareste evenimentele noastre viitoare!</p>
+                            <ul>
+                                <li>Workshop de machiaj - 15 aprilie</li>
+                                <li>Eveniment de lansare - 20 mai</li>
+                            </ul>
+                        </section>
+                    </div>
+                </section>
+                <section id="zona5">
+                    <h2>Utilizatori online</h2>
+                    <p><i class="fas fa-user"></i> In prezent, 25 de utilizatori sunt online.</p>
+                    <p><i class="fas fa-sync fa-spin"></i> Actualizam datele în timp real!</p>
+                </section>
+                <section id="zona6">
+                    <h2>Date utilizator/statistici</h2>
+                    <p>Ai vizitat aceasta pagina de 5 ori în ultima saptamana.</p>
+                </section>
+                <section id="zona7">
+                    <h2>Date site/server</h2>
+                    <p>Serverul functionează normal. Timp de raspuns: 120ms.</p>
+                </section>
+            
+              <section id="zona8">
+                <h3>Politica de Returnare</h3>
+                    <p>La <b>Lunaria Beauty Shop</b>, ne dorim ca fiecare client sa fie pe deplin multumit de achizitiile sale. Daca nu esti complet satisfacut de un produs de machiaj, il poti returna in termen de 30 de zile de la data achizitiei, cu conditia ca produsul sa fie in ambalajul original, sigilat si neutilizat.</p>
+                    <p>Procedura de returnare:</p>
+                    <ul>
+                        <li>Contacteaza serviciul nostru de relatii cu clientii pentru a initia procesul de returnare.</li>
+                        <li>Completeaza formularul de returnare primit de la serviciul de relatii cu clientii.</li>
+                        <li>Ambaleaza produsul in ambalajul original si ataseaza formularul de returnare completat.</li>
+                        <li>Trimite coletul la adresa indicata de serviciul de relatii cu clientii.</li>
+                    </ul>
+                    <p>Dupa primirea si verificarea produsului returnat, iti vom rambursa suma platita in termen de 14 zile lucratoare.</p>
+                    <p><strong>Nota:</strong> Costurile de transport pentru returnare sunt responsabilitatea clientului, cu exceptia cazurilor in care produsul este defect sau a fost livrat gresit.</p>
+              </section>    
+                
+                
+            </main>
+            <%- include('../fragmente/footer') %>
+</body>
+</html>

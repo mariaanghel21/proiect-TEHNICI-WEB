@@ -1,6 +1,31 @@
 {
   "dependencies": {
     "bootstrap": "^5.3.5",
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
     "sharp": "^0.34.0"
-  }
+  },
+  "name": "proiect-tehnici-web",
+  "version": "1.0.0",
+  "description": "proiect pt cursul de tehnici web",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mariaanghel21/proiect-TEHNICI-WEB.git"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "ejs",
+    "express"
+  ],
+  "author": "Anghel Maria",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mariaanghel21/proiect-TEHNICI-WEB/issues"
+  },
+  "homepage": "https://github.com/mariaanghel21/proiect-TEHNICI-WEB#readme"
 }
