@@ -1,24 +1,39 @@
 {
-    "cale_baza": "resurse/imagini/erori",
+    "cale_baza": "/resurse/imagini/erori",
     "eroare_default": {
-        "titlu": "Eroare server",
-        "text": "Ne pare rău, a apărut o eroare neașteptată.",
-        "imagine": "eroare_default.png"
+      "titlu": "Eroare neașteptată",
+      "text": "A apărut o problemă tehnică. Vă rugăm să încercați mai târziu.",
+      "imagine": "eroare_generica.jpg"
     },
     "info_erori": [
-        {
-            "identificator": 404,
-            "status": true,
-            "titlu": "Pagina nu a fost găsită",
-            "text": "Ne pare rău, pagina pe care o cauți nu există.",
-            "imagine": "404.jpg"
-        },
-        {
-            "identificator": 403,
-            "status": true,
-            "titlu": "Acces interzis",
-            "text": "Nu ai permisiunea de a accesa această resursă.",
-            "imagine": "403.jpg"
-        }
+      {
+        "identificator": 404,
+        "status": true,
+        "titlu": "Pagina nu există",
+        "text": "Pagina pe care o căutați nu a putut fi găsită.",
+        "imagine": "404.jpg"
+      },
+      {
+        "identificator": 500,
+        "status": true,
+        "titlu": "Eroare server",
+        "text": "A apărut o problemă pe server. Echipa noastră a fost notificată.",
+        "imagine": "500.jpg"
+      },
+      {
+        "identificator": 403,
+        "status": true,
+        "titlu": "Acces interzis",
+        "text": "Nu aveți permisiunea de a accesa această resursă.",
+        "imagine": "403.jpg"
+      },
+      {
+        "identificator": 400,
+        "status": true,
+        "titlu": "Cerere invalidă",
+        "text": "Fișierele cu extensia .ejs nu pot fi accesate direct.",
+        "imagine": "400.jpg"
+    }
+
     ]
-}
+  }

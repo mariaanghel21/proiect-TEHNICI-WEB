@@ -1,9 +1,103 @@
 <!DOCTYPE html>
 <html lang="ro">
-    <%- include('../fragmente/head') %>
-    <body id="top">
-        <%- include('../fragmente/header') %>
+    <head>
+        <title>Prima Pagina</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="make-up, par, ten, corp, mascara, fond de ten, ser, buze, sprancene, ulei de par, crema de corp">
+        <meta name="description" content="Curs de Tehnici Web. Limbajul HTML. Taguri.">
+        <meta name="author" content="Maria Anghel">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+        <link rel="icon" type="image/png" href="/index.html" sizes="96x96" />
+        <link rel="icon" type="image/svg+xml" href="./resurse/imagini/favicon/favicon.svg" />
+        <link rel="shortcut icon" href="./resurse/imagini/favicon/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="./resurse/imagini/favicon/apple-touch-icon.png" />
+        <link rel="manifest" href="./resurse/imagini/favicon/site.webmanifest" />  
+        <link rel="stylesheet" href="resurse/css/general.css">
+        <link rel="stylesheet" href="resurse/css/nav.css">
+        <link rel="stylesheet" href="resurse/css/ceva.css">
+        <style>
+            
+        </style>
+    </head>
         
+    <body id="top">
+        <header>
+            <h1 style="color:#DE9EE6;">Lunaria Beauty Shop</h1>
+            <input type="checkbox" id="menu-toggle" hidden >
+            <label for="menu-toggle" class="menu-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+             </label>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#Make-up"><i class="fa-solid fa-house"></i> Make-up</a>
+                        <ul>
+                            <li><a href="#Ten">Ten</a>
+                                <ul>
+                                    <li><a href="#Anticearcan">Anticearcan</a></li>
+                                    <li><a href="#Fond de ten">Fond de ten</a></li>
+                                    <li><a href="#Baze de make-up">Baze de make-up</a></li>
+                                    <li><a href="#Pudra bronzanta">Pudra bronzanta</a></li>
+                                    <li><a href="#Pudra libera">Pudra libera</a></li>
+                                    <li><a href="#Pudra matifianta">Pudra matifianta</a></li>
+                                    <li><a href="#Creme BB & CC">Creme BB & CC</a></li>
+                                    <li><a href="#Fard de obraz">Fard de obraz</a></li>
+                                    <li><a href="#Iluminator">Iluminator</a></li>
+                                    <li><a href="#Conturing">Conturing</a></li>
+                                    <li><a href="#Palete de ten">Palete de ten</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#Sprancene">Sprancene</a>
+                                <ul>
+                                    <li><a href="#Creion & pudra sprancene">Creion & pudra sprancene</a></li>
+                                    <li><a href="#Gel & mascara sprancene">Gel & mascara sprancene</a></li>
+                                    <li><a href="#Set sprancene">Set sprancene</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#Buze">Buze</a>
+                                <ul>
+                                    <li><a href="#Ruj de buze">Ruj de buze</a></li>
+                                    <li><a href="#Balsam de buze">Balsam de buze</a></li>
+                                    <li><a href="#Creion de buze">Creion de buze</a></li>
+                                    <li><a href="#Gloss">Gloss</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#Ochi">Ochi</a>
+                                <ul>
+                                    <li><a href="#Mascara">Mascara</a></li>
+                                    <li><a href="#Fard de pleoape">Fard de pleoape</a></li>
+                                    <li><a href="#Eyeliner">Eyeliner</a></li>
+                                    <li><a href="#Creion de ochi">Creion de ochi</a></li>
+                                    <li><a href="#Baza de pleoape">Baza de pleoape</a></li>
+                                    <li><a href="#Gene false">Gene false</a></li>
+                                    <li><a href="#Palete ochi">Palete ochi</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#Baie & Corp"><i class="fa-solid fa-house"></i> Baie & Corp</a>
+                        <ul>
+                            <li><a href="#Gel de dus">Gel de dus</a></li>
+                            <li><a href="#Lapte de corp">Lapte de corp</a></li>
+                            <li><a href="#Scrub de corp">Scrub de corp</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#Par"><i class="fa-solid fa-house"></i> Par</a>
+                        <ul>
+                            <li><a href="#Sampon">Sampon</a></li>
+                            <li><a href="#Balsam de par">Balsam de par</a></li>
+                            <li><a href="#Ulei de par">Ulei de par</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
             
             <section id="zona1">
                 <h2>Home Page</h2>
@@ -136,7 +230,6 @@
                 <section id="zona6">
                     <h2>Date utilizator/statistici</h2>
                     <p>Ai vizitat aceasta pagina de 5 ori în ultima saptamana.</p>
-                    <p>IP-ul tau: <%= ip %></p>
                 </section>
                 <section id="zona7">
                     <h2>Date site/server</h2>
@@ -159,6 +252,37 @@
                 
                 
             </main>
-            <%- include('../fragmente/footer') %>
+            <footer>
+                <address>
+                    <h2>Contacteaza-ne</h2>
+                    <p><strong>Telefon:</strong> <a href="tel:+40000000000">+40 000 000 000</a></p>
+                    <p><strong>Adresa:</strong> <a href="https://www.google.com/maps?q=Facultatea+de+Matematica+si+Informatica,+Bucuresti" target="_blank">Strada Frumusetii, Nr. 10, București, România</a></p>
+                    <p><strong>Email:</strong> <a href="mailto:contact@lunariabeautyshop.ro">contact@lunariabeautyshop.ro</a></p>
+                    <p><strong>Chat:</strong> <a href="https://wa.me/40000000000" target="_blank">WhatsApp</a></p>
+                </address>
+            
+                <div class="map-container">
+                    <h3>Locația noastră pe harta</h3>
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2848.123456789!2d26.102538315316!3d44.435320979102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1ff2e12345678%3A0x123456789abcdef!2sFacultatea%20de%20Matematica%20si%20Informatica%2C%20Bucuresti!5e0!3m2!1sen!2sro!4v1611234567890!5m2!1sen!2sro" 
+                        width="100%" 
+                        height="400" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+            
+                <div class="footer-bottom">
+                    <a href="#top" class="back-to-top" title="Înapoi la începutul paginii">
+                        <span class="arrow">&#129081;</span>
+                    </a>
+                    <br>
+                    <a href="resurse/document.docx" download="document.docx">Descarca documentul</a>
+                    <br>
+                    <small>&copy; <time datetime="2025-03-08">8 martie 2025</time> Lunaria Beauty Shop. Toate drepturile rezervate.</small>
+                </div>
+            </footer>
+    </main>
 </body>
 </html>
